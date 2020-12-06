@@ -192,7 +192,7 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./src/os/create-directories.sh
+  src/os/create-directories.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -201,15 +201,15 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./src/os/create-symbolic-links.sh "$@"
+  # src/os/create-symbolic-links.sh "$@"
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./src/os/create-local-config-files.sh
+  # src/os/create-local-config-files.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./src/os/install/00-main.sh
+  # src/os/install/00-main.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -221,11 +221,11 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  figlet "... and we're live!" | lolcat
+  # figlet "... and we're live!" | lolcat
 
-  if ! $skipQuestions; then
-    ./restart.sh
-  fi
+  # if ! $skipQuestions; then
+  #   ./restart.sh
+  # fi
 
 }
 
