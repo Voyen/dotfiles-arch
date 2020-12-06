@@ -12,4 +12,5 @@ pac_install "git"
 pac_install "vim"
 pac_install "unzip"
 pac_install "zip"
+pac_install "go"
 

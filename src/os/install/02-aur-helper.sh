@@ -8,8 +8,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   AUR Helper\n\n"
 
-pac_install "go" "GoLang"
-
 cd ~
 execute "git clone https://aur.archlinux.org/yay" "Cloning Yay"
 cd yay
