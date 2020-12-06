@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# sudo 
+# (double dash is so any other params are passed to 
+# called binary, rather than to sudo itself)
+alias sudo='sudo --'
+alias pls='sudo --'
+
+# generics
+alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first'  # long format
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
+alias l.='exa -a | egrep "^\."' # dotfiles only
+alias baii='shutdown now'
+# TODO: turn this into a function to differentiate between apt and pacman (e.g. `pacman -Syyu`)
+alias update='sudo apt-get update && sudo apt-get upgrade'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias open='xdg-open'
+alias python=python3
+alias wimp='dig +short myip.opendns.com @resolver1.opendns.com'
+alias chrome=google-chrome
+alias pip=pip3
+alias cp='cp -rv'
+alias mv='mv -v'
+alias md='mkdir -p'
+alias rd='rmdir'
+alias wget='wget -c'
+alias path='printf "%b\n" "${PATH//:/\\n}"'
+alias vim='nvim'
+
+# arch specific
+alias k=kubectl
+complete -F __start_kubectl k # to enable bash completion on the alias too
+alias tf=terraform
+alias gcp=gcloud
+
+# git
+alias gs='git status'
+alias gcl='git reset --hard && git clean -f'
+alias gcm='git commit -am'
+alias gco='git checkout'
+
+# maven
+# TODO: turn these into functions to differentiate between maven and make
+alias mi='mvn install'
+alias mci='mvn clean install'
+alias mfp='mvn clean package javadoc:aggregate'
+
+# yarn
+alias yrs='yarn run start'
+alias yi='yarn install'

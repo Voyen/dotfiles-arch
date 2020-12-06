@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export TERMINAL=st
+export EDITOR=vim
+export BROWSER=firefox
+
+export PATH=$PATH:~/.local/bin:
