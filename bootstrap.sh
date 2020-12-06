@@ -192,7 +192,10 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  src/os/create-directories.sh
+  echo "pwd: $(pwd)"
+  sudo pacman -S tree
+  echo "tree: $(tree)"
+  # src/os/create-directories.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
