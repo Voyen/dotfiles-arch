@@ -155,7 +155,6 @@ main() {
 
   # Ensure that the following actions are made relative to this file's path.
 
-  echo $BASH_SOURCE[0]
   cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -193,10 +192,7 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  echo "pwd: $(pwd)"
-  sudo pacman -S tree
-  echo "tree: $(tree)"
-  # src/os/create-directories.sh
+  ./create-directories.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -205,7 +201,7 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  # src/os/create-symbolic-links.sh "$@"
+  ./create-symbolic-links.sh "$@"
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
