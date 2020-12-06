@@ -8,11 +8,11 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n • Installs\n\n"
 
-execute "sudo pacman -Syyu" "Pacman (update)"
+execute "sudo pacman --noconfirm --needed -Syyu" "Pacman (update)"
 
 ./01-absolute-basics.sh
 ./02-aur-helper.sh
-# ./03-display-management.sh
+./03-display-management.sh
 # ./01-build-essentials.sh
 # ./02-basics.sh
 # ./03-system-utils.sh
