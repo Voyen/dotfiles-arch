@@ -10,14 +10,10 @@ print_in_purple "\n • Installs\n\n"
 
 execute "sudo pacman --noconfirm --needed -Syyu" "Pacman (update)"
 
+./00-mandatory.sh
 ./01-absolute-basics.sh
 ./02-aur-helper.sh
 ./03-display-management.sh
-# ./01-build-essentials.sh
-# ./02-basics.sh
-# ./03-system-utils.sh
-# ./04-dev-tools.sh
-# ./05-image-tools.sh
-# ./06-misc.sh
-
-# ./99-cleanup.sh
+./04-system-utils.sh
+./05-dev-tools.sh
+./06-misc.sh
