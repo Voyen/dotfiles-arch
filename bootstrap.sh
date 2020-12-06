@@ -155,6 +155,7 @@ main() {
 
   # Ensure that the following actions are made relative to this file's path.
 
+  echo $BASH_SOURCE[0]
   cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
