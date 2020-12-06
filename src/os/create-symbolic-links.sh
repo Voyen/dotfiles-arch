@@ -77,6 +77,7 @@ create_symlinks() {
   # links not in $HOME
 
   srcdir="$(cd ../.. && pwd)"
+  mkdir $HOME/.local
   execute "ln -fs $srcdir/.local/bin $HOME/.local/bin" "$HOME/.local/bin -> $srcdir/.local/bin"
   execute "ln -fs $srcdir/.dwm $HOME/.dwm" "$HOME/.dwm -> $srcdir/.dwm"
 
