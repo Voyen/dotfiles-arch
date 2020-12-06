@@ -18,30 +18,8 @@ pac_install "nano"
 pac_install "pcmanfm"
 pac_install "ranger"
 pac_install "exa"
-
-
-
-
-
-# dunst
-# firefox
-# libxft-bgra-git (yay)
-# lxappearance-gtk3
-# neofetch
-# ueberzug (yay)
-
-
-
-
-
-
-# Unsure?
-# gtk-engine-murrine
-# gtk-engines
-
-
-
-
-
-
-
+pac_install "firefox"
+pac_install "dunst"
+pac_install "qt5ct"
+pac_install "gtk-engines"
+pac_install "gtk-engine-murrine"

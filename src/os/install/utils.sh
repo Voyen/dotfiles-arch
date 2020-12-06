@@ -23,7 +23,7 @@ suckless_install() {
   curdir=$(pwd)
 
   execute "cd ~ \
-          && git clone git@github.com:Voyen/$PACKAGE \
+          && git clone https://github.com/Voyen/$PACKAGE \
           && cd $PACKAGE \
           && make \
           && sudo make install" \

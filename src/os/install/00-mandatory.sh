@@ -13,4 +13,5 @@ pac_install "vim"
 pac_install "unzip"
 pac_install "zip"
 pac_install "go"
+pac_install "openssh"
 

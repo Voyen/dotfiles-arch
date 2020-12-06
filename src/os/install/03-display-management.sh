@@ -26,4 +26,7 @@ pac_install "ttf-joypixels"
 pac_install "ttf-linux-libertine"
 yay_install "ttf-symbola"
 
+yay_install "libxft-bgra-git"
+pac_install "lxappearance-gtk3"
+
 # sudo cp ./misc/dwm.desktop /usr/share/xsessions/
