@@ -205,11 +205,11 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  # src/os/create-local-config-files.sh
+  ./create-local-config-files.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  # src/os/install/00-main.sh
+  ./install/00-main.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
