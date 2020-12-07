@@ -1,0 +1,1 @@
+dwmblocks >> ~/.dwmblocks.log 2>&1 &

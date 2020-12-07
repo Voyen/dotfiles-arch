@@ -10,3 +10,4 @@ print_in_purple "\n   System Utilities\n\n"
 
 pac_install gparted
 pac_install speedtest-cli
+pac_install network-manager-applet

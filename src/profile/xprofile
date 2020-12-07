@@ -1,2 +1,3 @@
 nitrogen --restore &
-picom &
+picom --config $HOME/.config/picom/picom.conf &
+nm-applet &
