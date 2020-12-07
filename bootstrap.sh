@@ -211,6 +211,10 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  ./src/os/set-initial-wallpaper.sh
+
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
   sudo cp ./non-home-files/qt5ct.sh /etc/profile.d/
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
