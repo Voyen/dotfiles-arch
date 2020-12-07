@@ -10,6 +10,8 @@ print_in_purple "\n • Installs\n\n"
 
 execute "sudo pacman --noconfirm --needed -Syyu" "Pacman (update)"
 
+execute "sudo pacman -R pango libxft" "Removing libxft"
+
 ./00-mandatory.sh
 ./01-absolute-basics.sh
 ./02-aur-helper.sh

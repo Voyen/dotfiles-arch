@@ -15,7 +15,10 @@ pac_install "xorg-xrandr"
 pac_install "arandr"
 pac_install "nitrogen"
 yay_install "picom-ibhagwan-git"
+yay_install "libxft-bgra-git"
+pac_install "pango"
 pac_install "lightdm"
+pac_install "lxappearance-gtk3"
 pac_install "lightdm-gtk-greeter"
 pac_install "lightdm-gtk-greeter-settings"
 
@@ -26,7 +29,5 @@ pac_install "ttf-joypixels"
 pac_install "ttf-linux-libertine"
 yay_install "ttf-symbola"
 
-yay_install "libxft-bgra-git"
-pac_install "lxappearance-gtk3"
-
-# sudo cp ./misc/dwm.desktop /usr/share/xsessions/
+sudo mkdir /usr/share/xsessions
+sudo cp ./misc/dwm.desktop /usr/share/xsessions/
