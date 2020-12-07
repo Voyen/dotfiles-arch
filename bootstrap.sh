@@ -213,6 +213,10 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  nitrogen --set-zoom-fill ../initial-wall/wallpaper.jpg
+
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
   # ./preferences/main.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
