@@ -24,7 +24,7 @@ create_symlinks() {
 
     "git/gitattributes"
     "git/gitconfig"
-    "git/gitignore"
+    "git/gitignore_global"
   )
 
   local i=""
@@ -77,7 +77,7 @@ create_symlinks() {
   # links not in $HOME
 
   srcdir="$(cd ../.. && pwd)"
-  mkdir -p $HOME/.local $HOME/.config/picom $HOME/.config/ranger
+  mkdir $HOME/.local $HOME/.config
   execute "ln -fs $srcdir/.local/bin $HOME/.local/bin" "$HOME/.local/bin -> $srcdir/.local/bin"
   execute "ln -fs $srcdir/.dwm $HOME/.dwm" "$HOME/.dwm -> $srcdir/.dwm"
   execute "ln -fs $srcdir/.config/picom $HOME/.config/picom" "$HOME/.config/picom -> $scrdir/.config/picom"
