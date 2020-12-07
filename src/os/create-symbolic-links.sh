@@ -21,6 +21,7 @@ create_symlinks() {
     "profile/inputrc"
     "profile/dmrc"
     "profile/xprofile"
+    "profile/Xresources"
 
     "git/gitattributes"
     "git/gitconfig"
