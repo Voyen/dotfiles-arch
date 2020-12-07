@@ -18,3 +18,11 @@ execute "sudo pacman --noconfirm --needed -Syyu" "Pacman (update)"
 ./05-dev-tools.sh
 ./06-misc.sh
 ./99-suckless.sh
+
+# betterlockscreen
+# nextcloud
+# onlyoffice
+# qt5-styleplugins (yay)
+# xclip
+# xmenu
+# youtube-dl

@@ -12,3 +12,5 @@ suckless_install "st"
 suckless_install "dmenu"
 suckless_install "dwm"
 suckless_install "dwmblocks"
+
+cp ~/dwm/layoutmenu.sh ~/.local/bin/
