@@ -10,6 +10,7 @@ print_in_purple "\n   Essentials\n\n"
 
 pac_install "amd-ucode" "AMD Microcode"
 pac_install "bash-completion" "Bash Completion"
+yay_install "libxft-bgra-git"
 pac_install "xterm"
 pac_install "neovim"
 pac_install "htop"
