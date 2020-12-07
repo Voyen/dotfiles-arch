@@ -98,8 +98,6 @@ download_dotfiles() {
   rm -rf "$tmpFile"
   print_result $? "Remove archive"
 
-  cd "$dotfilesDirectory/src/os" || return 1
-
 }
 
 download_utils() {
@@ -192,7 +190,7 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./create-directories.sh
+  ./src/os/create-directories.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -201,15 +199,19 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./create-symbolic-links.sh "$@"
+  ./src/os/create-symbolic-links.sh "$@"
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./create-local-config-files.sh
+  ./src/os/create-local-config-files.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./install/00-main.sh
+  ./src/os/install/00-main.sh
+
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  sudo cp ./non-home-files/qt5ct.sh /etc/profile.d/
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

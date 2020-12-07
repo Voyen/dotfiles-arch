@@ -22,7 +22,4 @@ execute "sudo pacman --noconfirm --needed -Syyu" "Pacman (update)"
 # betterlockscreen
 # nextcloud
 # onlyoffice
-# qt5-styleplugins (yay)
-# xclip
-# xmenu
 # youtube-dl

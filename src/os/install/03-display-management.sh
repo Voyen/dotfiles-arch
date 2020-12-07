@@ -30,3 +30,5 @@ yay_install "ttf-symbola"
 
 sudo mkdir /usr/share/xsessions
 sudo cp ./misc/dwm.desktop /usr/share/xsessions/
+
+execute "echo 1 | yay --answerdiff N --answerclean N -S qt5-styleplugins" "qt5-styleplugins"
