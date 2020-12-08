@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# GTK stuff
+
 tar -xf $HOME/.dotfiles/src/theme/Canta-icons.tar.xz -C $HOME/.local/share/icons/
 tar -xf $HOME/.dotfiles/src/theme/01-Layan-border-cursors.tar.xz -C $HOME/.local/share/icons/
 tar -xf $HOME/.dotfiles/src/theme/02-Layan-cursors.tar.xz -C $HOME/.local/share/icons/
@@ -25,3 +29,17 @@ gtk-xft-antialias=1
 gtk-xft-hinting=1
 gtk-xft-hintstyle=hintmedium
 EOF
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# LightDM
+
+sudo cp $HOME/.dotfiles/src/initial-wall/greeter.jpg /etc/lightdm/
+
+sudo cat <<EOF > /etc/lightdm/lightdm-gtk-greeter.conf
+[greeter]
+theme-name = Arc-Dark
+icon-theme-name = Numix-Circle
+font-name = Fira Code 10
+background = /etc/lightdm/greeter.jpg
+hide-user-image = true
