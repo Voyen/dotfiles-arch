@@ -98,6 +98,8 @@ download_dotfiles() {
   rm -rf "$tmpFile"
   print_result $? "Remove archive"
 
+  cd "$dotfilesDirectory" || return 1
+
 }
 
 download_utils() {
@@ -190,7 +192,6 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  echo "pwd: $(pwd)"
   ./src/os/create-directories.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
