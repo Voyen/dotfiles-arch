@@ -12,6 +12,13 @@ The code is available under the [MIT license][license].
 
 ## TODO
 
+- [ ] Grub theme
+- [ ] LightDM theme
+- [ ] Init Github SSH
+- [ ] Init other dev auth
+  - [ ] gcloud
+  - [ ] awscli
+
 <!-- Link labels: -->
 
 [license]: LICENSE.txt
