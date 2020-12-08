@@ -10,6 +10,9 @@ create_directories() {
         "$HOME/Downloads/torrents"
         "$HOME/bin"
         "$HOME/dev"
+        "$HOME/.config"
+        "$HOME/.local/share/themes"
+        "$HOME/.local/share/icons"
     )
 
     for i in "${DIRECTORIES[@]}"; do

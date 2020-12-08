@@ -50,7 +50,6 @@ shopt -s no_empty_cmd_completion
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Fix Del key on some distros (like Arch)
-# completion is attempted on an empty line.
 
 tput smkx
 
