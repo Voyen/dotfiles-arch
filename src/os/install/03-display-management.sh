@@ -33,4 +33,4 @@ sudo cp ./misc/dwm.desktop /usr/share/xsessions/
 
 pac_install "arc-gtk-theme"
 execute "echo 1 | yay --answerdiff N --answerclean N -S qt5-styleplugins" "qt5-styleplugins"
-execute "yay --answerdiff N --answerclean N -S numix-circle-icon-theme-git"
+execute "yay --answerdiff N --answerclean N -S numix-circle-icon-theme-git" "numix-circle-icon-theme"
