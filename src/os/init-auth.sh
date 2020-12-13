@@ -8,8 +8,7 @@ main() {
 
   echo "init git repo pwd1: $(pwd)"
   if cmd_exists "git"; then
-    echo "check 1: $(git config --get remote.origin.url)"
-    echo "check 2: $DOTFILES_ORIGIN"
+
     if [ "$(git config --get remote.origin.url)" != "$DOTFILES_ORIGIN" ]; then
       echo "init git repo pwd2: $(pwd)"
       ./initialise-git-repository.sh "$DOTFILES_ORIGIN"
@@ -18,7 +17,6 @@ main() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     if ! $skipQuestions; then
-    echo updating content...
       ./update-content.sh
     fi
 
