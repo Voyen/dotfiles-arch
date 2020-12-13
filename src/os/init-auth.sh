@@ -6,11 +6,10 @@ main() {
 
   print_in_purple "\n • Initialise Authentication\n\n"
 
-  echo "init git repo pwd1: $(pwd)"
   if cmd_exists "git"; then
 
     if [ "$(git config --get remote.origin.url)" != "$DOTFILES_ORIGIN" ]; then
-      echo "init git repo pwd2: $(pwd)"
+      echo "init git repo pwd: $(pwd)"
       ./initialise-git-repository.sh "$DOTFILES_ORIGIN"
     fi
 
