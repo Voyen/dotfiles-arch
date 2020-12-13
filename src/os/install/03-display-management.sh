@@ -34,3 +34,8 @@ sudo cp ./misc/dwm.desktop /usr/share/xsessions/
 pac_install "arc-gtk-theme"
 execute "echo 1 | yay --answerdiff N --answerclean N -S qt5-styleplugins" "qt5-styleplugins"
 execute "yay --answerdiff N --answerclean N -S numix-circle-icon-theme-git" "numix-circle-icon-theme"
+
+print_in_purple "\n   Lockscreen\n\n"
+
+execute "echo 1 | yay --answerdiff N --answerclean N --noconfirm -S betterlockscreen" "betterlockscreen"
+execute "betterlockscreen -u ~/.dotfiles/src/initial-wall/wallpaper.jpg" "caching lockscreen wallpaper"

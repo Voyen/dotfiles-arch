@@ -205,3 +205,6 @@
     #     by the local ones
 
     path = ~/.gitconfig.local
+
+[pull]
+    ff = only
