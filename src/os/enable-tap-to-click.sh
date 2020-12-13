@@ -8,4 +8,5 @@
         Driver "libinput"
 	# Enable left mouse button by tapping
 	Option "Tapping" "on"
-EndSection' > /etc/X11/xorg.conf.d/40-libinput.conf
+EndSection
+' | sudo tee -a /etc/X11/xorg.conf.d/40-libinput.conf
