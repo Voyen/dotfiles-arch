@@ -36,13 +36,12 @@ EOF
 
 sudo cp $HOME/.dotfiles/src/initial-wall/greeter.jpg /etc/lightdm/
 
-sudo cat <<EOF > /etc/lightdm/lightdm-gtk-greeter.conf
-[greeter]
+printf '[greeter]
 theme-name = Arc-Dark
 icon-theme-name = Numix-Circle
 font-name = Fira Code 10
 background = /etc/lightdm/greeter.jpg
 hide-user-image = true
-EOF
+' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf > /dev/null
 
 sudo cp $HOME/.dotfiles/non-home-files/qt5ct.sh /etc/profile.d/

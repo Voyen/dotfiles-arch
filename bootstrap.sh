@@ -220,6 +220,10 @@ main() {
   ./src/os/set-initial-wallpaper.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  ./src/os/set-themes.sh
+
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   
   ./src/os/colorise-pacman.sh
 

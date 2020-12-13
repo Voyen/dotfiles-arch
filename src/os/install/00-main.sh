@@ -16,6 +16,8 @@ execute "sudo pacman --noconfirm --needed -Syyu" "Pacman (update)"
 ./03-display-management.sh
 ./04-system-utils.sh
 ./05-dev-tools.sh
+./05.1-nvm.sh
+./05.2-npm.sh
 ./06-misc.sh
 ./99-suckless.sh
 

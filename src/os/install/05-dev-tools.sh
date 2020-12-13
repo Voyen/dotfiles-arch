@@ -13,3 +13,4 @@ pac_install maven
 pac_install shellcheck
 pac_install meld
 yay_install bcompare
+pac_install yarn
