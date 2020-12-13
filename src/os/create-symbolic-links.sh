@@ -80,8 +80,8 @@ create_symlinks() {
   srcdir="$(cd ../.. && pwd)"
   execute "ln -fs $srcdir/.local/bin $HOME/.local/bin" "$HOME/.local/bin -> $srcdir/.local/bin"
   execute "ln -fs $srcdir/.dwm $HOME/.dwm" "$HOME/.dwm -> $srcdir/.dwm"
-  execute "ln -fs $srcdir/.config/picom $HOME/.config/picom" "$HOME/.config/picom -> $scrdir/.config/picom"
-  execute "ln -fs $srcdir/.config/ranger $HOME/.config/ranger" "$HOME/.config/ranger -> $scrdir/.config/ranger"
+  execute "ln -fs $srcdir/.config/picom $HOME/.config/picom" "$HOME/.config/picom -> $srcdir/.config/picom"
+  execute "ln -fs $srcdir/.config/ranger $HOME/.config/ranger" "$HOME/.config/ranger -> $srcdir/.config/ranger"
 
 }
 
