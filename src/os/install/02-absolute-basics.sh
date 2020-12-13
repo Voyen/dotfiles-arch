@@ -8,7 +8,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Essentials\n\n"
 
-pac_install "amd-ucode" "AMD Microcode"
 pac_install "bash-completion" "Bash Completion"
 yay_install "libxft-bgra-git"
 pac_install "xterm"

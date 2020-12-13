@@ -12,8 +12,9 @@ The code is available under the [MIT license][license].
 
 ## TODO
 
+- [ ] Arch pre-install script (to do the initial OS install itself)
 - [ ] Grub theme
-- [ ] LightDM theme
+- [x] LightDM theme
 - [ ] Init Github SSH
 - [ ] Init other dev auth
   - [ ] gcloud
