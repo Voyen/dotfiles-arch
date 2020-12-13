@@ -1,7 +1,6 @@
 #!/bin/bash
 
 cd "$(dirname "${BASH_SOURCE[0]}")" && . "utils.sh"
-echo "origin test2: $DOTFILES_ORIGIN"
 
 main() {
 
