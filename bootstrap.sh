@@ -192,7 +192,7 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./src/os/create-directories.sh
+  # ./src/os/create-directories.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -201,41 +201,41 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./src/os/create-symbolic-links.sh "$@"
+  # ./src/os/create-symbolic-links.sh "$@"
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./src/os/create-local-config-files.sh
+  # ./src/os/create-local-config-files.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./src/os/install/00-main.sh
+  # ./src/os/install/00-main.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./src/os/set-initial-wallpaper.sh
+  # ./src/os/set-initial-wallpaper.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  sudo cp ./non-home-files/qt5ct.sh /etc/profile.d/
+  # sudo cp ./non-home-files/qt5ct.sh /etc/profile.d/
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   
   # Make pacman and yay colorful and adds eye candy on the progress bar because why not.
-  grep -q "^Color" /etc/pacman.conf || sed -i "s/^#Color$/Color/" /etc/pacman.conf
-  grep -q "ILoveCandy" /etc/pacman.conf || sed -i "/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
+  # grep -q "^Color" /etc/pacman.conf || sed -i "s/^#Color$/Color/" /etc/pacman.conf
+  # grep -q "ILoveCandy" /etc/pacman.conf || sed -i "/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./src/os/enable-tap-to-click.sh
+  # ./src/os/enable-tap-to-click.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   # Fix fluidsynth/pulseaudio issue.
-  grep -q "OTHER_OPTS='-a pulseaudio -m alsa_seq -r 48000'" /etc/conf.d/fluidsynth ||
-	  echo "OTHER_OPTS='-a pulseaudio -m alsa_seq -r 48000'" >> /etc/conf.d/fluidsynth
+  # grep -q "OTHER_OPTS='-a pulseaudio -m alsa_seq -r 48000'" /etc/conf.d/fluidsynth ||
+	#   echo "OTHER_OPTS='-a pulseaudio -m alsa_seq -r 48000'" >> /etc/conf.d/fluidsynth
 
-  killall pulseaudio; sudo -u voyen pulseaudio --start
+  # killall pulseaudio; sudo -u voyen pulseaudio --start
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -243,12 +243,12 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  clear
-  figlet "... and we're live!" | lolcat
+  # clear
+  # figlet "... and we're live!" | lolcat
 
-  if ! $skipQuestions; then
-    ./src/os/restart.sh
-  fi
+  # if ! $skipQuestions; then
+  #   ./src/os/restart.sh
+  # fi
 
 }
 
