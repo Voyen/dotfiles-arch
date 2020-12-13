@@ -239,19 +239,16 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  # ./preferences/main.sh
+  ./src/os/init-auth.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  # ./init_auth.sh
+  clear
+  figlet "... and we're live!" | lolcat
 
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-  # figlet "... and we're live!" | lolcat
-
-  # if ! $skipQuestions; then
-  #   ./restart.sh
-  # fi
+  if ! $skipQuestions; then
+    ./src/os/restart.sh
+  fi
 
 }
 
