@@ -9,4 +9,4 @@
 	# Enable left mouse button by tapping
 	Option "Tapping" "on"
 EndSection
-' | sudo tee -a /etc/X11/xorg.conf.d/40-libinput.conf
+' | sudo tee -a /etc/X11/xorg.conf.d/40-libinput.conf > /dev/null
