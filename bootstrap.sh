@@ -239,6 +239,7 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  echo "origin test1: $DOTFILES_ORIGIN"
   ./src/os/init-auth.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
