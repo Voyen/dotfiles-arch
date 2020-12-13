@@ -9,14 +9,12 @@ main() {
   if cmd_exists "git"; then
 
     if [ "$(git config --get remote.origin.url)" != "$DOTFILES_ORIGIN" ]; then
-        ./initialise-git-repository.sh "$DOTFILES_ORIGIN"
+      ./initialise-git-repository.sh "$DOTFILES_ORIGIN"
     fi
 
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    if ! $skipQuestions; then
-        ./update-content.sh
-    fi
+    # if ! $skipQuestions; then
+    #   ./update-content.sh
+    # fi
 
   fi
 
