@@ -1,10 +1,10 @@
 #!/bin/bash
 
-declare -r GITHUB_REPOSITORY="Voyen/dotfiles-arch"
+export GITHUB_REPOSITORY="Voyen/dotfiles-arch"
 
-declare -r DOTFILES_ORIGIN="git@github.com:$GITHUB_REPOSITORY.git"
-declare -r DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/main"
-declare -r DOTFILES_UTILS_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/src/os/utils.sh"
+export DOTFILES_ORIGIN="git@github.com:$GITHUB_REPOSITORY.git"
+export DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/main"
+export DOTFILES_UTILS_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/src/os/utils.sh"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -213,17 +213,15 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  ./src/os/init-auth.sh
+
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
   ./src/os/set-initial-wallpaper.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-  sudo cp ./non-home-files/qt5ct.sh /etc/profile.d/
-
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   
-  # Make pacman and yay colorful and adds eye candy on the progress bar because why not.
-  grep -q "^Color" /etc/pacman.conf || sed -i "s/^#Color$/Color/" /etc/pacman.conf
-  grep -q "ILoveCandy" /etc/pacman.conf || sed -i "/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
+  ./src/os/colorise-pacman.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -231,24 +229,16 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  # Fix fluidsynth/pulseaudio issue.
-  grep -q "OTHER_OPTS='-a pulseaudio -m alsa_seq -r 48000'" /etc/conf.d/fluidsynth ||
-	  echo "OTHER_OPTS='-a pulseaudio -m alsa_seq -r 48000'" >> /etc/conf.d/fluidsynth
-
-  killall pulseaudio; sudo -u voyen pulseaudio --start
+  ./src/os/fix-audio.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  ./src/os/init-auth.sh
+  # clear
+  # figlet "... and we're live!" | lolcat
 
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-  clear
-  figlet "... and we're live!" | lolcat
-
-  if ! $skipQuestions; then
-    ./src/os/restart.sh
-  fi
+  # if ! $skipQuestions; then
+  #   ./src/os/restart.sh
+  # fi
 
 }
 

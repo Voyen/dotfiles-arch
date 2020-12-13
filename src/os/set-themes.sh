@@ -43,3 +43,6 @@ icon-theme-name = Numix-Circle
 font-name = Fira Code 10
 background = /etc/lightdm/greeter.jpg
 hide-user-image = true
+EOF
+
+sudo cp $HOME/.dotfiles/non-home-files/qt5ct.sh /etc/profile.d/
