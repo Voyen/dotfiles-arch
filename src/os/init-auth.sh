@@ -8,6 +8,7 @@ main() {
   print_in_purple "\n • Initialise Authentication\n\n"
 
   echo "init git repo pwd1: $(pwd)"
+  echo "origin test3: $DOTFILES_ORIGIN"
   if cmd_exists "git"; then
     echo "check 1: $(git config --get remote.origin.url)"
     echo "check 2: $DOTFILES_ORIGIN"
