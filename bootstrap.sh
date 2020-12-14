@@ -3,8 +3,8 @@
 export GITHUB_REPOSITORY="Voyen/dotfiles-arch"
 
 export DOTFILES_ORIGIN="git@github.com:$GITHUB_REPOSITORY.git"
-export DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/main"
-export DOTFILES_UTILS_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/src/os/utils.sh"
+export DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/arco"
+export DOTFILES_UTILS_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/arco/src/os/utils.sh"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
