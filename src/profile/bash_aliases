@@ -33,10 +33,10 @@ alias path='printf "%b\n" "${PATH//:/\\n}"'
 alias vim='nvim'
 
 # arch specific
-alias k=kubectl
-complete -F __start_kubectl k # to enable bash completion on the alias too
-alias tf=terraform
-alias gcp=gcloud
+# alias k=kubectl
+# complete -F __start_kubectl k # to enable bash completion on the alias too
+# alias tf=terraform
+# alias gcp=gcloud
 
 # git
 alias gs='git status'

@@ -45,3 +45,10 @@ export MANPAGER="less -X"
 # shells instead of the default "last window closed" history.
 
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# The usual
+
+export PATH=$PATH:~/.local/bin:
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk

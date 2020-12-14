@@ -9,6 +9,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 print_in_purple "\n   Dev Tools\n\n"
 
 pac_install aws-cli
+pac_install jdk8-openjdk
 pac_install maven
 pac_install shellcheck
 pac_install meld

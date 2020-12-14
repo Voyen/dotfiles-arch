@@ -11,7 +11,7 @@ print_in_purple "\n • Installs\n\n"
 execute "sudo pacman --noconfirm --needed -Syyu" "Pacman (update)"
 
 ./00-mandatory.sh
-./01-aur-helper.sh
+# ./01-aur-helper.sh
 ./02-absolute-basics.sh
 ./03-display-management.sh
 ./04-system-utils.sh

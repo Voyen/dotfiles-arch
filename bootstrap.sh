@@ -224,25 +224,12 @@ main() {
   ./src/os/set-themes.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  
-  ./src/os/colorise-pacman.sh
 
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  figlet "... and we're live!" | lolcat
 
-  ./src/os/enable-tap-to-click.sh
-
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-  # ./src/os/fix-audio.sh
-
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-  # clear
-  # figlet "... and we're live!" | lolcat
-
-  # if ! $skipQuestions; then
-  #   ./src/os/restart.sh
-  # fi
+  if ! $skipQuestions; then
+    ./src/os/restart.sh
+  fi
 
 }
 

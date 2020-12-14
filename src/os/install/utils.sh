@@ -18,6 +18,13 @@ yay_install() {
   execute "yay -S --noconfirm "$PACKAGE" >/dev/null 2>&1" "$PACKAGE_READABLE_NAME"
 }
 
+yay_install_conflicted() {
+  declare -r PACKAGE="$1"
+  declare -r PACKAGE_READABLE_NAME="${2:-$1}"
+
+  execute "echo Y | yay --answerdiff N --answerclean N --noconfirm -S "$PACKAGE" >/dev/null 2>&1" "$PACKAGE_READABLE_NAME"
+}
+
 suckless_install() {
   declare -r PACKAGE="$1"
   curdir=$(pwd)

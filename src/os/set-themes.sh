@@ -44,4 +44,4 @@ background = /etc/lightdm/greeter.jpg
 hide-user-image = true
 ' | sudo tee -a /etc/lightdm/lightdm-gtk-greeter.conf > /dev/null
 
-sudo cp $HOME/.dotfiles/non-home-files/qt5ct.sh /etc/profile.d/
+# sudo cp $HOME/.dotfiles/non-home-files/qt5ct.sh /etc/profile.d/
